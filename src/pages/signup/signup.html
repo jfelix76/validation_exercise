@@ -1,0 +1,28 @@
+<ion-header class="signup-header auth-header">
+  <ion-navbar>
+    <ion-title>Validation Exercise</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h2 class="padding-left-sm">Sign Up</h2>
+  <form class="signup-form auth-form" [formGroup]="signup" (ngSubmit)="doSignup()">
+    <ion-item>
+      <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" formControlName="password" show-hide-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Confirm password" formControlName="confirm_password" show-hide-input></ion-input>
+      </ion-item>
+  <div class="button-sm">
+    <div>
+        &nbsp;
+    </div>
+    <div>
+        <button ion-button block class="auth-action-button signup-button" type="submit" [disabled]="!signup.valid">Go</button>
+    </div>  
+  </div>
+  </form> 
+</ion-content>
