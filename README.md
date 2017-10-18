@@ -26,7 +26,7 @@ http://ionicframework.com/docs/intro/installation/
 
 Create new Ionic app - select super
 
-$ ionic start angular-validators
+$ ionic start validation_exercise
 
 Clone / download new project
 
