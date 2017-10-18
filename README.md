@@ -1,26 +1,48 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+Test project to explore how to implement sync/async validators
 
-## How to use this template
+Install homebrew
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+$ brew update
 
-### With the Ionic CLI:
+$ brew doctor
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Add to your .bash_profile (or env variables)
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+export PATH="/usr/local/bin:$PATH"
 
-Then, to run it, cd into `myBlank` and run:
+$ source ~/.bash_profile ** Be sure to open new terminal window session to realize the new changes
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+Install Node
 
-Substitute ios for android if not on a Mac.
+$ brew install node
+
+$ npm install -g grunt-cli
+
+Install Ionic (latest)
+
+http://ionicframework.com/docs/intro/installation/
+
+Create new Ionic app - select super
+
+$ ionic start angular-validators
+
+Clone / download new project
+
+https://github.com/jfelix76/validation_exercise.git
+
+Copy src/ to angular-validators/src dir
+
+$ cp 'location-of-new-download-or-clone' 'validation_exercise/src'
+
+Change directory to new project and update
+
+$ cd 'new validation_exercise root dir'
+
+$ npm install
+
+Run app
+
+$ ionic serve
 
